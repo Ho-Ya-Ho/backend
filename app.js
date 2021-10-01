@@ -1,3 +1,4 @@
+//쿠쿠
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -26,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/menu', menuRouter);
+app.use('/menus', menuRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

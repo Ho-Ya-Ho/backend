@@ -3,16 +3,34 @@ var router = express.Router();
 const models = require("../models");
 
 router.get('/', function(req, res){
-    models.Menu.findAll().then(res1 => {
-        res.json(res1);
-    }).catch(err=>{
-        console.log(err);
+    models.Menu.findAll({
+        order: [['id']]
+        }).then(res1 => {
+            res.json(res1);
+        }).catch(err=>{
+            console.log(err);
     })
-
 });
 
-router.get('/userinfo', async function(req, res){
-    await models.Test.findOne({
+router.post('/modify', function(req, res){
+
+    console.log(req.body.dislike_check.toString());
+    models.Test.update({
+        likeFood: "["+req.body.like_check.toString()+"]",
+        dislikeFood: "["+req.body.dislike_check.toString()+"]"
+    },{
+        where:{
+            nickname:req.body.name
+        }
+    }).then(res1=>{
+            console.log(res1);
+            res.status(200).send();
+        }).catch(e=>{console.log(e)});
+
+})
+
+router.get('/userinfo', function(req, res){
+    models.Test.findOne({
         where: {
             nickname: req.query.name
         }
