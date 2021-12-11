@@ -10,5 +10,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="front" />
     <orderEntry type="module" module-name="backend2" />
+    <orderEntry type="module" module-name="front2" />
+    <orderEntry type="module" module-name="html" />
+    <orderEntry type="module" module-name="voca" />
+    <orderEntry type="module" module-name="mashup-todolist" />
   </component>
 </module>

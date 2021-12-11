@@ -5,6 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/backend.iml" filepath="$PROJECT_DIR$/.idea/backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/../backend2/.idea/backend2.iml" filepath="$PROJECT_DIR$/../backend2/.idea/backend2.iml" />
       <module fileurl="file://$PROJECT_DIR$/../front/.idea/front.iml" filepath="$PROJECT_DIR$/../front/.idea/front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../front2/.idea/front2.iml" filepath="$PROJECT_DIR$/../front2/.idea/front2.iml" />
+      <module fileurl="file://$USER_HOME$/WebstormProjects/Google Web/.idea/html.iml" filepath="$USER_HOME$/WebstormProjects/Google Web/.idea/html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mashup-todolist/.idea/mashup-todolist.iml" filepath="$PROJECT_DIR$/../mashup-todolist/.idea/mashup-todolist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../voca/.idea/voca.iml" filepath="$PROJECT_DIR$/../voca/.idea/voca.iml" />
     </modules>
   </component>
 </project>

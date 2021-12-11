@@ -26,7 +26,6 @@ router.post('/modify', function(req, res){
             console.log(res1);
             res.status(200).send();
         }).catch(e=>{console.log(e)});
-
 })
 
 router.get('/userinfo', function(req, res){
@@ -38,8 +37,8 @@ router.get('/userinfo', function(req, res){
         if(res1){
             let likeFood_id = JSON.parse(res1.likeFood);
             let dislikeFood_id = JSON.parse(res1.dislikeFood);
-            let likeFood = []
-            let dislikeFood = []
+            let likeFood = [];
+            let dislikeFood = [];
             models.Menu.findAll({
                 where: {
                     id: likeFood_id
